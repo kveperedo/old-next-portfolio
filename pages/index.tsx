@@ -19,8 +19,6 @@ const IndexPage = () => {
 				<Home />
 				<Divider />
 				<AboutMe />
-
-				<div style={{ height: '5000px' }}></div>
 			</Container>
 
 			{/* <footer className={styles.footer}>
