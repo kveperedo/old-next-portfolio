@@ -4,6 +4,9 @@
   align-items: center;
   padding: 2rem;
   padding-top: 6rem;
+  background: url(/images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .name {
   color: var(--black);

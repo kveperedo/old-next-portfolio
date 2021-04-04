@@ -3,6 +3,9 @@
   flex-direction: column;
   padding: 2rem;
   color: var(--white);
+  background: url(/images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container > p {

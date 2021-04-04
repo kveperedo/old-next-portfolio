@@ -14,12 +14,12 @@ const IndexPage = () => {
 				<link rel="icon" href="/images/logo.svg" />
 			</Head>
 
-			<Container>
-				<Header />
-				<Home />
-				<Divider />
-				<AboutMe />
-			</Container>
+			{/* <Container> */}
+			<Header />
+			<Home />
+			<Divider />
+			<AboutMe />
+			{/* </Container> */}
 
 			{/* <footer className={styles.footer}>
 				<a
