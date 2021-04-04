@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 2rem;
   color: var(--white);
-  background: url(/images/bg.svg);
+  background: url(/images/bg-alt.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
