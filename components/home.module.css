@@ -2,7 +2,6 @@
   background: url("/images/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-top: -4rem; */
 }
 .container {
   display: flex;

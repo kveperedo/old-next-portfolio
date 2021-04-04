@@ -1,11 +1,45 @@
+.main {
+  background: url("/images/bg-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
-  background-color: var(--white);
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  color: var(--white);
+}
+
+.container > p {
+  letter-spacing: 0.05rem;
+  line-height: 175%;
+  /* font-weight: 500; */
+  font-size: 0.75rem;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .header {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
+  margin: auto;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.blue {
+  color: var(--blue-crayola);
+}
+
+.orange {
+  color: #ee6352;
+}
+
+.green {
+  color: #00c49a;
+}
+
+.yellow {
+  color: #eee82c;
 }
