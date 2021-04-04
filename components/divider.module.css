@@ -1,0 +1,14 @@
+.main {
+  width: calc(100% - 4rem);
+  height: 1px;
+  background-color: var(--white);
+  margin: auto;
+  position: relative;
+}
+
+.animation {
+  width: 10%;
+  height: 100%;
+  background-color: var(--blue-crayola);
+  position: absolute;
+}

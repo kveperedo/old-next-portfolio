@@ -1,6 +1,8 @@
 import Head from 'next/head';
 
 import AboutMe from '../components/aboutme';
+import Container from '../components/container';
+import Divider from '../components/divider';
 import Header from '../components/header';
 import Home from '../components/home';
 
@@ -12,9 +14,14 @@ const IndexPage = () => {
 				<link rel="icon" href="/images/logo.svg" />
 			</Head>
 
-			<Header />
-			<Home />
-			<AboutMe />
+			<Container>
+				<Header />
+				<Home />
+				<Divider />
+				<AboutMe />
+
+				<div style={{ height: '5000px' }}></div>
+			</Container>
 
 			{/* <footer className={styles.footer}>
 				<a
