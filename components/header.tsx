@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence, Variants, useCycle } from 'framer-motion';
 
 import { fadeVariants } from '../utils/framermotion';
-import headerStyles from '../styles/header.module.css';
+import headerStyles from './header.module.css';
 import { throttle } from '../utils/helpers';
 
 const headerVariants: Variants = {

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { fadeVariants } from '../utils/framermotion';
-import homeStyles from '../styles/home.module.css';
+import homeStyles from './home.module.css';
 
 const Home = () => {
 	return (
@@ -64,7 +64,6 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<style jsx>{``}</style>
 		</div>
 	);
 };
