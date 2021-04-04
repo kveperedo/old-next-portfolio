@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.header {
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}

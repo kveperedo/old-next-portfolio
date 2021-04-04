@@ -36,14 +36,14 @@ const Header = () => {
 		cycleHeaderAnimation();
 	}, [isOpen]);
 
-	// useEffect(() => {
-	// 	const onScroll = throttle(() => {
-	// 		// setIsOpen()
-	// 	}, 1000);
+	useEffect(() => {
+		const onScroll = throttle(() => {
+			if (isOpen) setIsOpen(false);
+		}, 1000);
 
-	// 	window.addEventListener('scroll', onScroll);
-	// 	return () => window.removeEventListener('scroll', onScroll);
-	// }, [setIsOpen, cycleHeaderAnimation]);
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, [isOpen, setIsOpen]);
 
 	return (
 		<motion.header
