@@ -1,11 +1,10 @@
 .header {
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   top: 0;
   z-index: 2;
-  backdrop-filter: blur(10px);
   align-items: center;
   position: fixed;
   width: 100%;

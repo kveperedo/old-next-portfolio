@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
+import AboutMe from '../components/aboutme';
 import Header from '../components/header';
 import Home from '../components/home';
 
@@ -14,6 +14,7 @@ const IndexPage = () => {
 
 			<Header />
 			<Home />
+			<AboutMe />
 
 			{/* <footer className={styles.footer}>
 				<a

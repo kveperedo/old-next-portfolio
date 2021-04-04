@@ -9,15 +9,13 @@ import { throttle } from '../utils/helpers';
 const headerVariants: Variants = {
 	expanded: {
 		backgroundColor: 'var(--white)',
-		borderRadius: '2px',
 		filter: 'drop-shadow(1px 1px 32px rgba(0, 0, 0, 0.25))',
 	},
 	collapsed: {
-		backgroundColor: 'rgba(255, 255, 255, 0)',
+		backgroundColor: 'rgba(255, 255, 255, 0.5)',
 		transition: {
 			duration: 0.5,
 			ease: 'easeInOut',
-			// when: 'beforeChildren',
 		},
 	},
 };
@@ -31,7 +29,6 @@ const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [headerAnimation, cycleHeaderAnimation] = useCycle('expanded', 'collapsed');
 
-	console.log('header', isOpen);
 	useEffect(() => {
 		cycleHeaderAnimation();
 	}, [isOpen]);
