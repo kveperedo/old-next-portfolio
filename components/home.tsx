@@ -38,7 +38,7 @@ const Home = () => {
 				</section>
 
 				<div className={homeStyles.card}>
-					<button className={homeStyles.resume} onClick={() => window.open('/resume.pdf')}>
+					<button className={homeStyles.resume} onClick={() => window.open('/Resume.pdf')}>
 						Get Resume
 					</button>
 					<div className={homeStyles.contact}>
