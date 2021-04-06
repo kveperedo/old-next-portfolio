@@ -75,6 +75,8 @@ const IndexPage = () => {
 
 				.particles canvas {
 					filter: blur(10px);
+					width: 100vw !important;
+					height: 100vh !important;
 				}
 			`}</style>
 		</div>
