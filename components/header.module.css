@@ -45,6 +45,14 @@
   cursor: pointer;
 }
 
+.menu > div:hover,
+.menu > div:visited,
+.menu > div:active,
+.menu > div:link {
+  border-radius: 0.5rem;
+  background-color: var(--grey-200);
+}
+
 .menu > div:last-child {
   margin-bottom: 0;
 }
@@ -53,6 +61,7 @@
   margin: 0;
   margin-left: 2rem;
   letter-spacing: 0.05rem;
+  padding-right: 1rem;
 }
 
 p.selected {

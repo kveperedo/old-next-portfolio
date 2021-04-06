@@ -528,7 +528,7 @@ export const particleOptions = {
 			},
 		},
 	},
-	pauseOnBlur: true,
+	pauseOnBlur: false,
 	pauseOnOutsideViewport: true,
 	responsive: [],
 	themes: [],
