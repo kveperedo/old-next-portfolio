@@ -46,11 +46,10 @@
 }
 
 .menu > div:hover,
-.menu > div:visited,
-.menu > div:active,
-.menu > div:link {
+.menu > div:active {
   border-radius: 0.5rem;
   background-color: var(--grey-200);
+  color: var(--blue-crayola);
 }
 
 .menu > div:last-child {

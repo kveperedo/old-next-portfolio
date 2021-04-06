@@ -73,6 +73,11 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 		cycleHeaderAnimation();
 	}, [isOpen]);
 
+	const onItemClick = (id: CurrentPage) => {
+		setIsOpen(false);
+		onMenuClick(id);
+	};
+
 	useEffect(() => {
 		const onScroll = throttle(() => {
 			if (isOpen) setIsOpen(false);
@@ -91,7 +96,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 			className={headerStyles.header}
 		>
 			<motion.div layout>
-				<Image width={32} height={32} src="/images/logo.svg" alt="home logo" onClick={() => onMenuClick('home')} />
+				<Image width={32} height={32} src="/images/logo.svg" alt="home logo" onClick={() => onItemClick('home')} />
 				<motion.p
 					layout
 					className={headerStyles.name}
@@ -129,7 +134,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 								const className = current === item.id ? headerStyles.selected : '';
 
 								return (
-									<div key={item.id} onClick={() => onMenuClick(item.id as CurrentPage)}>
+									<div key={item.id} onClick={() => onItemClick(item.id as CurrentPage)}>
 										<Image src={item.src} width={32} height={32} alt={item.alt} />
 										<p className={className}>{item.name}</p>
 									</div>
