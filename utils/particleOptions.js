@@ -55,7 +55,7 @@ export const particleOptions = {
 					smooth: 10,
 				},
 			},
-			resize: true,
+			resize: false,
 		},
 		modes: {
 			attract: {
