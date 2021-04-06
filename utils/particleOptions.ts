@@ -1,4 +1,7 @@
-export const particleOptions = {
+import { ISourceOptions } from 'react-tsparticles';
+import { isMobile } from 'react-device-detect';
+
+export const options: ISourceOptions = {
 	autoPlay: true,
 	background: {
 		color: {
@@ -44,7 +47,6 @@ export const particleOptions = {
 				selectors: [],
 				enable: false,
 				mode: [],
-				type: 'circle',
 			},
 			onHover: {
 				enable: false,
@@ -55,16 +57,13 @@ export const particleOptions = {
 					smooth: 10,
 				},
 			},
-			resize: false,
+			resize: !isMobile,
 		},
 		modes: {
 			attract: {
 				distance: 200,
 				duration: 0.4,
 				speed: 1,
-			},
-			bounce: {
-				distance: 200,
 			},
 			bubble: {
 				distance: 200,
@@ -134,12 +133,8 @@ export const particleOptions = {
 					collisions: {
 						enable: false,
 						bounce: {
-							horizontal: {
-								random: {},
-							},
-							vertical: {
-								random: {},
-							},
+							horizontal: {},
+							vertical: {},
 						},
 						overlap: {},
 					},
@@ -153,15 +148,12 @@ export const particleOptions = {
 							default: 'destroy',
 						},
 						speed: 2,
-						angle: {},
 						attract: {
 							rotate: {},
 						},
 						gravity: {},
 						path: {
-							delay: {
-								random: {},
-							},
+							delay: {},
 						},
 						trail: {},
 					},
@@ -175,30 +167,20 @@ export const particleOptions = {
 							startValue: 'min',
 							destroy: 'max',
 						},
-						random: {},
 					},
 					bounce: {
-						horizontal: {
-							random: {},
-						},
-						vertical: {
-							random: {},
-						},
+						horizontal: {},
+						vertical: {},
 					},
 					life: {
-						delay: {
-							random: {},
-						},
-						duration: {
-							random: {},
-						},
+						delay: {},
+						duration: {},
 					},
 					number: {
 						density: {},
 					},
 					opacity: {
 						animation: {},
-						random: {},
 					},
 					rotate: {
 						animation: {},
@@ -335,7 +317,6 @@ export const particleOptions = {
 			frequency: 1,
 			opacity: 1,
 			shadow: {
-				blur: true,
 				color: {
 					value: '#00ff00',
 				},
@@ -528,8 +509,17 @@ export const particleOptions = {
 			},
 		},
 	},
-	pauseOnBlur: false,
+	pauseOnBlur: true,
 	pauseOnOutsideViewport: true,
+	emitters: {
+		autoPlay: true,
+		rate: {
+			quantity: 1,
+			delay: 5,
+		},
+		direction: 'bottomRight',
+		position: { x: -50 },
+	},
 	responsive: [],
 	themes: [],
 };

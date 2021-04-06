@@ -8,7 +8,7 @@ import Home from '../components/home';
 import AboutMe from '../components/aboutme';
 import BasicInfo from '../components/basicinfo';
 import { CurrentPage } from '../components/header';
-import { particleOptions } from '../utils/particleOptions';
+import { options } from '../utils/particleOptions';
 
 const IndexPage = () => {
 	const [homeRef, isHomeVisible, homeDiv] = useInView();
@@ -47,7 +47,7 @@ const IndexPage = () => {
 				<link rel="icon" href="/images/logo.svg" />
 			</Head>
 
-			<Particles className="particles" options={particleOptions} />
+			<Particles className="particles" options={options} />
 
 			<Header current={getCurrent()} onMenuClick={onMenuChange} />
 			<Home ref={homeRef} />
