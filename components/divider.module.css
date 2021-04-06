@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.static {
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey-300);
+  margin: auto;
+}
+
 .animation {
   width: 10%;
   height: 100%;

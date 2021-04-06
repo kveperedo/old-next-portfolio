@@ -1,9 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 6rem 2rem;
   color: var(--white);
-  background: url(/images/bg-alt.svg);
+  background: #ffffffa8;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,6 +17,12 @@
   color: var(--black);
 }
 
+.container > p > a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .container span {
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -24,7 +30,7 @@
 
 .header {
   letter-spacing: 0.1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: auto;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -40,7 +46,7 @@
 }
 
 .green {
-  color: #00c49a;
+  color: #008a6c;
 }
 
 .red {

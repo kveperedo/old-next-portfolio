@@ -1,12 +1,17 @@
+import { forwardRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { fadeVariants } from '../utils/framermotion';
 import homeStyles from './home.module.css';
 
-const Home = () => {
+interface Props {
+	ref: React.Ref<HTMLDivElement>;
+}
+
+const Home: React.FC<Props> = forwardRef<HTMLDivElement, Props>((_, ref) => {
 	return (
-		<div className={homeStyles.container}>
+		<div ref={ref} className={homeStyles.container}>
 			<motion.div className={homeStyles.profileImage} variants={fadeVariants()} initial="hidden" animate="visible">
 				<Image
 					layout="fill"
@@ -64,6 +69,6 @@ const Home = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Home;

@@ -6,6 +6,19 @@ import { fadeVariants } from '../utils/framermotion';
 import headerStyles from './header.module.css';
 import { throttle } from '../utils/helpers';
 
+export type CurrentPage = 'home' | 'aboutme' | 'basicinfo' | 'projects';
+
+interface HeaderList {
+	src: string;
+	name: string;
+	alt: string;
+	id: string;
+}
+interface Props {
+	current: CurrentPage;
+	onMenuClick: (current: CurrentPage) => void;
+}
+
 const headerVariants: Variants = {
 	expanded: {
 		backgroundColor: 'var(--white)',
@@ -25,7 +38,34 @@ const imgSrc = {
 	open: '/images/menu.svg',
 };
 
-const Header = () => {
+const headerList: HeaderList[] = [
+	{
+		name: 'Home',
+		id: 'home',
+		alt: 'Home icon',
+		src: '/images/home.svg',
+	},
+	{
+		name: 'About Me',
+		id: 'aboutme',
+		alt: 'About Me icon',
+		src: '/images/aboutme.svg',
+	},
+	{
+		name: 'Basic Information',
+		id: 'basicinfo',
+		alt: 'Basic Information icon',
+		src: '/images/basicinfo.svg',
+	},
+	{
+		name: 'Projects',
+		id: 'projects',
+		alt: 'Projects icon',
+		src: '/images/projects.svg',
+	},
+];
+
+const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [headerAnimation, cycleHeaderAnimation] = useCycle('expanded', 'collapsed');
 
@@ -51,7 +91,7 @@ const Header = () => {
 			className={headerStyles.header}
 		>
 			<motion.div layout>
-				<Image width={32} height={32} src="/images/logo.svg" alt="home logo" />
+				<Image width={32} height={32} src="/images/logo.svg" alt="home logo" onClick={() => onMenuClick('home')} />
 				<motion.p
 					layout
 					className={headerStyles.name}
@@ -85,22 +125,16 @@ const Header = () => {
 						}}
 					>
 						<motion.section layout className={headerStyles.menu}>
-							<div>
-								<Image src="/images/home.svg" width={32} height={32} alt="Home icon" />
-								<p>Home</p>
-							</div>
-							<div>
-								<Image src="/images/aboutme.svg" width={32} height={32} alt="About me icon" />
-								<p>About Me</p>
-							</div>
-							<div>
-								<Image src="/images/basicinfo.svg" width={32} height={32} alt="Basic information icon" />
-								<p>Basic Information</p>
-							</div>
-							<div>
-								<Image src="/images/projects.svg" width={32} height={32} alt="Projects icon" />
-								<p>Projects</p>
-							</div>
+							{headerList.map(item => {
+								const className = current === item.id ? headerStyles.selected : '';
+
+								return (
+									<div key={item.id} onClick={() => onMenuClick(item.id as CurrentPage)}>
+										<Image src={item.src} width={32} height={32} alt={item.alt} />
+										<p className={className}>{item.name}</p>
+									</div>
+								);
+							})}
 						</motion.section>
 
 						<div className={headerStyles.contact}>

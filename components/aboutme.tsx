@@ -1,8 +1,15 @@
+import { forwardRef } from 'react';
+import { motion } from 'framer-motion';
+
 import aboutMeStyles from './aboutme.module.css';
 
-const AboutMe = () => {
+interface Props {
+	ref: React.Ref<HTMLDivElement>;
+}
+
+const AboutMe: React.FC<Props> = forwardRef((_, ref) => {
 	return (
-		<div className={aboutMeStyles.container}>
+		<div ref={ref} className={aboutMeStyles.container}>
 			<h3 className={aboutMeStyles.header}>About Me</h3>
 			<p>
 				Hello! My name is <span className={aboutMeStyles.blue}>Kevin</span>. I am 23 years old.
@@ -12,8 +19,8 @@ const AboutMe = () => {
 				University in Baguio City.
 			</p>
 			<p>
-				Passed the electronics engineering and electronics technician{' '}
-				<span className={aboutMeStyles.purple}>board exams</span> in 2019.
+				Passed the electronics engineering and electronics technician
+				<span className={aboutMeStyles.purple}> board exams</span> in 2019.
 			</p>
 			<p>
 				I am a self-taught <span className={aboutMeStyles.red}>Front-End Developer</span> with knowledge in HTML, CSS,
@@ -21,7 +28,7 @@ const AboutMe = () => {
 			</p>
 			<p>
 				Currently working at <span className={aboutMeStyles.blue}>SQREEM Technologies</span> as a software engineer
-				since 2020.{' '}
+				since 2020.
 			</p>
 			<p>
 				My <span className={aboutMeStyles.green}>hobbies</span> are: love for computers and mechanical keyboards,
@@ -30,13 +37,16 @@ const AboutMe = () => {
 			</p>
 			<p>
 				<span className={aboutMeStyles.red}>Music genres</span> that I enjoy are RnB, Jazz Lo-FI, Funk and Electronic
-				Pop. You can follow my Spotify playlist here: sptfy.com/kebon
+				Pop. You can follow my Spotify playlist here:{' '}
+				<motion.a whileHover={{ color: '#127435' }} onClick={() => window.open('https://www.sptfy.com/kebon')}>
+					sptfy.com/kebon
+				</motion.a>
 			</p>
 			<p>
 				My ultimate goal is to become a <span className={aboutMeStyles.purple}>Full Stack Engineer</span>.
 			</p>
 		</div>
 	);
-};
+});
 
 export default AboutMe;
