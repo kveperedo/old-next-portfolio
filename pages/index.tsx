@@ -9,13 +9,16 @@ import AboutMe from '../components/aboutme';
 import BasicInfo from '../components/basicinfo';
 import { CurrentPage } from '../components/header';
 import { options } from '../utils/particleOptions';
+import Projects from '../components/projects';
 
 const IndexPage = () => {
 	const [homeRef, isHomeVisible, homeDiv] = useInView();
 	const [aboutmeRef, isAboutMeVisible, aboutMeDiv] = useInView();
 	const [basicInfoRef, isBasicInfoVisible, basicInfoDiv] = useInView();
+	const [projectsRef, isProjectsVisible, projectsDiv] = useInView();
 
 	const getCurrent = (): CurrentPage => {
+		if (isProjectsVisible) return 'projects';
 		if (isBasicInfoVisible) return 'basicinfo';
 		if (isAboutMeVisible) return 'aboutme';
 		if (isHomeVisible) return 'home';
@@ -32,6 +35,9 @@ const IndexPage = () => {
 				break;
 			case 'basicinfo':
 				selectedPage = basicInfoDiv?.target;
+				break;
+			case 'projects':
+				selectedPage = projectsDiv?.target;
 				break;
 			default:
 				break;
@@ -56,16 +62,8 @@ const IndexPage = () => {
 			<Divider />
 			<BasicInfo ref={basicInfoRef} />
 			<Divider />
+			<Projects ref={projectsRef} />
 
-			{/* <footer className={styles.footer}>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Powered by <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-				</a>
-			</footer> */}
 			<style jsx global>{`
 				.particles {
 					height: 100vh;

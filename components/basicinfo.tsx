@@ -59,16 +59,31 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 			<Divider isStatic />
 
 			<h3 className={basicInfoStyles.title}>LICENCES & CERTIFICATIONS</h3>
-			<InfoText title="Modern React with Redux (Certification)" subtitle="2020" description="Udemy" />
 			<InfoText
-				title="Electronics Engineer (License)"
-				subtitle="2019"
-				description="Philippines Professional Regulation Commission"
+				title="Modern React with Redux"
+				subtitle="2020"
+				description="Udemy"
+				titleAddOns={
+					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>
+						(Certification)
+					</span>
+				}
 			/>
 			<InfoText
-				title="Electronics Technician (License)"
+				title="Electronics Engineer"
 				subtitle="2019"
 				description="Philippines Professional Regulation Commission"
+				titleAddOns={
+					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>(License)</span>
+				}
+			/>
+			<InfoText
+				title="Electronics Technician"
+				subtitle="2019"
+				description="Philippines Professional Regulation Commission"
+				titleAddOns={
+					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>(License)</span>
+				}
 			/>
 		</div>
 	);

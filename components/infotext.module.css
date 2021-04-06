@@ -2,12 +2,19 @@
   margin: 1.5rem 0;
 }
 
-.title {
+.titleContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.5rem 0;
+  justify-content: space-between;
+}
+
+.titleContainer .title {
   color: var(--black);
   font-weight: 600;
   letter-spacing: 0.1rem;
   font-size: 1rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0.5rem 0 0;
 }
 
 .subtitle {

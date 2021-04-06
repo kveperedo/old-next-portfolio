@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
+}
+
+.header {
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin: auto;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+}
