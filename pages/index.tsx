@@ -64,12 +64,15 @@ const IndexPage = () => {
 			<BasicInfo ref={basicInfoRef} />
 			<Divider />
 			<Projects ref={projectsRef} />
+			<Divider />
 			<Footer onMenuClick={onMenuChange} />
 
 			<style jsx global>{`
 				.particles {
 					height: 100vh;
-					width: 100vw;
+					 {
+						/* width: 100vw; */
+					}
 					position: absolute;
 				}
 
