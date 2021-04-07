@@ -1,0 +1,14 @@
+.links {
+  display: flex;
+}
+.links .icon {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  cursor: pointer;
+}
+.links .icon:hover {
+  background-color: var(--han-purple-lighter);
+}

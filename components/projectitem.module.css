@@ -17,7 +17,7 @@
 
 .links > a {
   display: flex;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   padding: 0.25rem;
   border-radius: 50%;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;

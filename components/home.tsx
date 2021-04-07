@@ -2,6 +2,7 @@ import { forwardRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+import SocialMediaLinks from './socialmedialinks';
 import { fadeVariants } from '../utils/framermotion';
 import homeStyles from './home.module.css';
 
@@ -55,17 +56,7 @@ const Home: React.FC<Props> = forwardRef<HTMLDivElement, Props>((_, ref) => {
 						<p>63 917 862 7621</p>
 					</div>
 				</div>
-				<div className={homeStyles.links}>
-					<div className={homeStyles.icon} onClick={() => window.open('https://github.com/kveperedo')}>
-						<Image src="/images/githubicon.svg" width={24} height={24} alt="github link" />
-					</div>
-					<div className={homeStyles.icon} onClick={() => window.open('https://www.linkedin.com/in/kveperedo/')}>
-						<Image src="/images/linkedinicon.svg" width={24} height={24} alt="linkedin link" />
-					</div>
-					<div className={homeStyles.icon} onClick={() => window.open('https://www.facebook.com/keboniinnn')}>
-						<Image src="/images/fbicon.svg" width={24} height={24} alt="facebook link" />
-					</div>
-				</div>
+				<SocialMediaLinks />
 			</div>
 		</div>
 	);

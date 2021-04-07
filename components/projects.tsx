@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 
 import ProjectItem from './projectitem';
 import projectStyles from './projects.module.css';
@@ -46,10 +46,10 @@ const Projects: React.FC<Props> = forwardRef((_, ref) => {
 			<h1 className={projectStyles.header}>Projects</h1>
 			{projectList.map((project, index, array) => {
 				return (
-					<>
+					<React.Fragment key={project.title}>
 						<ProjectItem {...project} />
 						{index !== array.length - 1 && <Divider isStatic />}
-					</>
+					</React.Fragment>
 				);
 			})}
 		</div>

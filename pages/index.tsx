@@ -7,9 +7,10 @@ import Header from '../components/header';
 import Home from '../components/home';
 import AboutMe from '../components/aboutme';
 import BasicInfo from '../components/basicinfo';
+import Projects from '../components/projects';
+import Footer from '../components/footer';
 import { CurrentPage } from '../components/header';
 import { options } from '../utils/particleOptions';
-import Projects from '../components/projects';
 
 const IndexPage = () => {
 	const [homeRef, isHomeVisible, homeDiv] = useInView();
@@ -63,6 +64,7 @@ const IndexPage = () => {
 			<BasicInfo ref={basicInfoRef} />
 			<Divider />
 			<Projects ref={projectsRef} />
+			<Footer onMenuClick={onMenuChange} />
 
 			<style jsx global>{`
 				.particles {

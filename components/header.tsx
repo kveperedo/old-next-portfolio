@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, Variants, useCycle } from 'framer-motion';
 
+import ContactDetails from './contactdetails';
 import { fadeVariants } from '../utils/framermotion';
 import headerStyles from './header.module.css';
 import { throttle } from '../utils/helpers';
@@ -141,17 +142,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 								);
 							})}
 						</motion.section>
-
-						<div className={headerStyles.contact}>
-							<div onClick={() => navigator.clipboard.writeText('kveperedo@gmail.com')}>
-								<Image src="/images/aticon.svg" width={16} height={16} alt="email logo" />
-								<p>kveperedo@gmail.com</p>
-							</div>
-							<div onClick={() => navigator.clipboard.writeText('+639178627621')}>
-								<Image src="/images/phoneicon.svg" width={16} height={16} alt="phone logo" />
-								<p>63 917 862 7621</p>
-							</div>
-						</div>
+						<ContactDetails />
 					</motion.div>
 				)}
 			</AnimatePresence>
