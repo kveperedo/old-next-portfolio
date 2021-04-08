@@ -62,9 +62,10 @@
   margin-left: 2rem;
   letter-spacing: 0.05rem;
   padding-right: 1rem;
+  color: var(--black);
 }
 
-p.selected {
+.menu > div > p.selected {
   color: var(--blue-crayola);
 }
 
