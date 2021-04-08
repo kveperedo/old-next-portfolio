@@ -111,6 +111,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 				</motion.p>
 				<AnimatePresence exitBeforeEnter>
 					<motion.img
+						className={headerStyles.mobileMenu}
 						key={isOpen ? imgSrc.close : imgSrc.open}
 						src={isOpen ? imgSrc.close : imgSrc.open}
 						variants={fadeVariants(0, 0.2)}
@@ -119,6 +120,17 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 						onClick={() => setIsOpen(!isOpen)}
 					/>
 				</AnimatePresence>
+				<ul className={headerStyles.desktopMenu}>
+					{headerList.map(item => {
+						const className = current === item.id ? headerStyles.selected : '';
+
+						return (
+							<li className={className} key={item.id} onClick={() => onMenuClick(item.id as CurrentPage)}>
+								{item.name}
+							</li>
+						);
+					})}
+				</ul>
 			</motion.div>
 			<AnimatePresence exitBeforeEnter>
 				{isOpen && (
