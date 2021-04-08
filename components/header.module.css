@@ -1,5 +1,5 @@
 .header {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -40,7 +40,8 @@
 .menu > div {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
   margin-right: auto;
   cursor: pointer;
 }
@@ -65,6 +66,10 @@
 
 p.selected {
   color: var(--blue-crayola);
+}
+
+.contact {
+  margin-bottom: 1rem;
 }
 
 /* @media (min-width: 640px) {

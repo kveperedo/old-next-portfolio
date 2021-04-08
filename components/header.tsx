@@ -53,7 +53,7 @@ const headerList: HeaderList[] = [
 		src: '/images/aboutme.svg',
 	},
 	{
-		name: 'Basic Information',
+		name: 'Basic Info',
 		id: 'basicinfo',
 		alt: 'Basic Information icon',
 		src: '/images/basicinfo.svg',
@@ -142,7 +142,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 								);
 							})}
 						</motion.section>
-						<ContactDetails />
+						<ContactDetails className={headerStyles.contact} />
 					</motion.div>
 				)}
 			</AnimatePresence>

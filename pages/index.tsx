@@ -70,9 +70,6 @@ const IndexPage = () => {
 			<style jsx global>{`
 				.particles {
 					height: 100vh;
-					 {
-						/* width: 100vw; */
-					}
 					position: absolute;
 				}
 
