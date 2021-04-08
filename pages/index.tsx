@@ -19,10 +19,10 @@ const IndexPage = () => {
 	const [projectsRef, isProjectsVisible, projectsDiv] = useInView();
 
 	const getCurrent = (): CurrentPage => {
-		if (isProjectsVisible) return 'projects';
-		if (isBasicInfoVisible) return 'basicinfo';
-		if (isAboutMeVisible) return 'aboutme';
 		if (isHomeVisible) return 'home';
+		if (isAboutMeVisible) return 'aboutme';
+		if (isBasicInfoVisible) return 'basicinfo';
+		if (isProjectsVisible) return 'projects';
 	};
 
 	const onMenuChange = (current: CurrentPage) => {

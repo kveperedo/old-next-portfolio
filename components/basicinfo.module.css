@@ -26,6 +26,36 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justifycontent: center;
+  justify-content: center;
   margin-bottom: 1rem;
+}
+
+.addOn {
+  color: var(--blue-crayola);
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 500px) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .addOn {
+    font-size: 1rem;
+  }
+
+  .skills {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skills > div {
+    width: 40%;
+    margin: 1rem;
+  }
 }

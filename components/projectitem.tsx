@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import React from 'react';
 
 import InfoText from './infotext';
 import projectItemStyles from './projectitem.module.css';
@@ -23,9 +24,14 @@ const ProjectItem: React.FC<Project> = ({ description, subtitle, title, imgSrc, 
 		return (
 			<div className={projectItemStyles.links}>
 				{links.map(link => (
-					<a href={link.link} target="_blank" key={link.imgSrc}>
-						<Image src={link.imgSrc} width={16} height={16} />
-					</a>
+					<React.Fragment key={link.imgSrc}>
+						<a className={projectItemStyles.linkMobile} href={link.link} target="_blank" key={link.imgSrc}>
+							<Image src={link.imgSrc} width={16} height={16} />
+						</a>
+						<a className={projectItemStyles.linkTablet} href={link.link} target="_blank" key={link.imgSrc}>
+							<Image src={link.imgSrc} width={24} height={24} />
+						</a>
+					</React.Fragment>
 				))}
 			</div>
 		);

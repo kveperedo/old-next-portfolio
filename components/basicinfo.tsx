@@ -63,27 +63,19 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 				title="Modern React with Redux"
 				subtitle="2020"
 				description="Udemy"
-				titleAddOns={
-					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>
-						(Certification)
-					</span>
-				}
+				titleAddOns={<span className={basicInfoStyles.addOn}>(Certification)</span>}
 			/>
 			<InfoText
 				title="Electronics Engineer"
 				subtitle="2019"
 				description="Philippines Professional Regulation Commission"
-				titleAddOns={
-					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>(License)</span>
-				}
+				titleAddOns={<span className={basicInfoStyles.addOn}>(License)</span>}
 			/>
 			<InfoText
 				title="Electronics Technician"
 				subtitle="2019"
 				description="Philippines Professional Regulation Commission"
-				titleAddOns={
-					<span style={{ color: 'var(--blue-crayola)', fontSize: '0.75rem', letterSpacing: '0.1rem' }}>(License)</span>
-				}
+				titleAddOns={<span className={basicInfoStyles.addOn}>(License)</span>}
 			/>
 		</div>
 	);

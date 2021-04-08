@@ -26,3 +26,21 @@
 .links > a:hover {
   background: var(--han-purple-lighter);
 }
+
+.links > a.linkTablet {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .image {
+    height: 360px;
+  }
+
+  .links > a.linkMobile {
+    display: none;
+  }
+
+  .links > a.linkTablet {
+    display: flex;
+  }
+}

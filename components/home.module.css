@@ -106,3 +106,45 @@
 .resume:hover {
   background-color: var(--han-purple-dark);
 }
+
+@media (min-width: 500px) {
+  .profileImage {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 2rem;
+  }
+
+  .intro .greeting {
+    font-size: 1.25rem;
+  }
+
+  .intro .name {
+    font-size: 3.5rem;
+  }
+
+  .intro .title {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+  }
+
+  .resume {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card .contact {
+    margin-bottom: 1.5rem;
+  }
+
+  .card .contact > div > p {
+    font-size: 1rem;
+  }
+}
