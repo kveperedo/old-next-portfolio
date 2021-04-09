@@ -17,8 +17,8 @@ const projectList: Project[] = [
 			'A Next.js personal portfolio. I made this portfolio to showcase my projects, relevant skills and abilities, and basic information needed. A mobile-first design approach was used for better user experiences both in mobile and desktop. Technologies and tools used are Next.js, React, Typescript, Framer Motion and CSS Modules.',
 		imgSrc: '/images/portfolio.png',
 		links: [
-			{ imgSrc: '/images/link.svg', link: 'https://kevinperedo.vercel.app/' },
-			{ imgSrc: '/images/githubicon.svg', link: 'https://github.com/kveperedo/portfolio' },
+			{ imgSrc: '/images/link.svg', link: 'https://kevinperedo.vercel.app/', title: 'Website' },
+			{ imgSrc: '/images/githubicon.svg', link: 'https://github.com/kveperedo/portfolio', title: 'Github Repository' },
 		],
 	},
 	{
@@ -28,8 +28,8 @@ const projectList: Project[] = [
 			'A note-taking app using React and Redux, designed in Figma, and deployed using Firebase. This is my first major personal project made in React after I finished the React and Redux course. Current features include a scratchpad for quick note-taking and a note section for more complicated formatting.',
 		imgSrc: '/images/noterist.png',
 		links: [
-			{ imgSrc: '/images/link.svg', link: 'https://kp-noterist.web.app/' },
-			{ imgSrc: '/images/githubicon.svg', link: 'https://github.com/kveperedo/noterist' },
+			{ imgSrc: '/images/link.svg', link: 'https://kp-noterist.web.app/', title: 'Web App' },
+			{ imgSrc: '/images/githubicon.svg', link: 'https://github.com/kveperedo/noterist', title: 'Github Repository' },
 		],
 	},
 	{
@@ -41,6 +41,7 @@ const projectList: Project[] = [
 			{
 				imgSrc: '/images/githubicon.svg',
 				link: 'https://github.com/kveperedo/ProjectLandslide',
+				title: 'Github Repository',
 			},
 		],
 	},
