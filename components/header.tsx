@@ -117,6 +117,7 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 						variants={fadeVariants(0, 0.2)}
 						initial="hidden"
 						animate="visible"
+						alt="menu icon"
 						onClick={() => setIsOpen(!isOpen)}
 					/>
 				</AnimatePresence>
