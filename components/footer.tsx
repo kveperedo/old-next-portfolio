@@ -13,7 +13,7 @@ const Footer: React.FC<Props> = ({ onMenuClick }) => {
 	return (
 		<footer className={footerStyles.footer}>
 			<SocialMediaLinks className={footerStyles.socialMedia} />
-			<ContactDetails />
+			<ContactDetails className={footerStyles.contacts} />
 			<ul className={footerStyles.navigation}>
 				<div>
 					<li onClick={() => onMenuClick('home')}>

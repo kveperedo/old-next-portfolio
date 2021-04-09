@@ -12,11 +12,11 @@ const ContactDetails: React.FC<Props> = ({ className }) => {
 
 	return (
 		<div className={containerClassName}>
-			<div onClick={() => navigator.clipboard.writeText('kveperedo@gmail.com')}>
+			<div>
 				<Image src="/images/aticon.svg" width={16} height={16} alt="email logo" />
 				<p>kveperedo@gmail.com</p>
 			</div>
-			<div onClick={() => navigator.clipboard.writeText('+639178627621')}>
+			<div>
 				<Image src="/images/phoneicon.svg" width={16} height={16} alt="phone logo" />
 				<p>63 917 862 7621</p>
 			</div>

@@ -25,10 +25,10 @@ const ProjectItem: React.FC<Project> = ({ description, subtitle, title, imgSrc, 
 			<div className={projectItemStyles.links}>
 				{links.map(link => (
 					<React.Fragment key={link.imgSrc}>
-						<a className={projectItemStyles.linkMobile} href={link.link} target="_blank" key={link.imgSrc}>
+						<a className={projectItemStyles.linkMobile} href={link.link} target="_blank">
 							<Image src={link.imgSrc} width={16} height={16} />
 						</a>
-						<a className={projectItemStyles.linkTablet} href={link.link} target="_blank" key={link.imgSrc}>
+						<a className={projectItemStyles.linkTablet} href={link.link} target="_blank">
 							<Image src={link.imgSrc} width={24} height={24} />
 						</a>
 					</React.Fragment>
@@ -38,7 +38,7 @@ const ProjectItem: React.FC<Project> = ({ description, subtitle, title, imgSrc, 
 	};
 
 	return (
-		<div>
+		<div className={projectItemStyles.container}>
 			{imgSrc && (
 				<div className={projectItemStyles.image}>
 					<Image src={imgSrc} alt="Project image" layout="fill" objectFit="cover" />

@@ -12,11 +12,13 @@ import Footer from '../components/footer';
 import { CurrentPage } from '../components/header';
 import { options } from '../utils/particleOptions';
 
+const observerOptions = { threshold: 0.25 };
+
 const IndexPage = () => {
-	const [homeRef, isHomeVisible, homeDiv] = useInView();
-	const [aboutmeRef, isAboutMeVisible, aboutMeDiv] = useInView();
-	const [basicInfoRef, isBasicInfoVisible, basicInfoDiv] = useInView();
-	const [projectsRef, isProjectsVisible, projectsDiv] = useInView();
+	const [homeRef, isHomeVisible, homeDiv] = useInView(observerOptions);
+	const [aboutmeRef, isAboutMeVisible, aboutMeDiv] = useInView(observerOptions);
+	const [basicInfoRef, isBasicInfoVisible, basicInfoDiv] = useInView(observerOptions);
+	const [projectsRef, isProjectsVisible, projectsDiv] = useInView(observerOptions);
 
 	const getCurrent = (): CurrentPage => {
 		if (isHomeVisible) return 'home';

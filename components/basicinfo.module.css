@@ -59,3 +59,58 @@
     margin: 1rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .header {
+    font-size: 6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .infoCard {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 600px;
+    box-shadow: 1px 1px 32px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .infoCard h3,
+  .infoSkills h3 {
+    margin: 0;
+    letter-spacing: 0.3rem;
+  }
+
+  .infoSkills {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 32px rgba(0, 0, 0, 0.25);
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .skills {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+
+  .skills > div {
+    width: 33%;
+    margin-top: 1.5rem;
+  }
+
+  .skills > div:first-child {
+    margin-left: 0;
+  }
+
+  .skills > div:last-child {
+    margin-right: 0;
+  }
+}

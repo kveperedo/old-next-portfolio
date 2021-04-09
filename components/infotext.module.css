@@ -46,3 +46,9 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .infoText {
+    margin-bottom: 0;
+  }
+}

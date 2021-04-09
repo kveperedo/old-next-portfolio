@@ -44,3 +44,23 @@
     display: flex;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    box-shadow: 1px 1px 32px rgb(0 0 0 / 25%);
+    width: 750px;
+  }
+
+  .image {
+    margin-bottom: 1.5rem;
+  }
+
+  .container > div:last-child {
+    margin-top: 0;
+  }
+}
