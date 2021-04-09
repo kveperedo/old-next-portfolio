@@ -13,7 +13,7 @@ const projectList: Project[] = [
 	{
 		title: 'Noterist',
 		subtitle: 'Sep 2020 - Present',
-		description: 'A note-taking app using React and Redux, designed in Figma, and deployed using Firebase',
+		description: 'A note-taking app using React and Redux, designed in Figma, and deployed using Firebase.',
 		imgSrc: '/images/noterist.png',
 		links: [
 			{ imgSrc: '/images/link.svg', link: 'https://kp-noterist.web.app/' },
@@ -24,7 +24,7 @@ const projectList: Project[] = [
 		title: 'Landslide Detection Interface',
 		subtitle: 'May 2019',
 		description:
-			'A web interface, for a thesis, for displaying landslide sensors data into graphs and text. Code base uses HTML, CSS and JavaScript (interface) and C/C++ (Arduino)',
+			'A web interface, for a thesis, for displaying landslide sensors data into graphs and text. Code base uses HTML, CSS and JavaScript (interface) and C/C++ (Arduino).',
 		links: [
 			{
 				imgSrc: '/images/githubicon.svg',
@@ -36,7 +36,7 @@ const projectList: Project[] = [
 		title: 'Randomized Pattern Generator',
 		subtitle: 'Dec 2017',
 		description:
-			'An Arduino-based device that tests the user’s short term memory capabilities with increasing difficulty. Code base uses C/C++ (Arduino)',
+			'An Arduino-based device that tests the user’s short term memory capabilities with increasing difficulty. Code base uses C/C++ (Arduino).',
 	},
 ];
 
