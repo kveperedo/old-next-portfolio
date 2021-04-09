@@ -12,3 +12,14 @@
   margin-bottom: 1.5rem;
   color: var(--black);
 }
+
+@media (min-width: 1440px) {
+  .header {
+    font-size: 6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
+}

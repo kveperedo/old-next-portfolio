@@ -48,7 +48,7 @@ const Projects: React.FC<Props> = forwardRef((_, ref) => {
 				return (
 					<React.Fragment key={project.title}>
 						<ProjectItem {...project} />
-						{index !== array.length - 1 && <Divider isStatic />}
+						{index !== array.length - 1 && <Divider staticClassName={projectStyles.divider} isStatic />}
 					</React.Fragment>
 				);
 			})}

@@ -4,10 +4,13 @@ import dividerStyles from './divider.module.css';
 
 interface Props {
 	isStatic?: boolean;
+	staticClassName?: string;
 }
 
-const Divider: React.FC<Props> = ({ isStatic }) => {
-	if (isStatic) return <div className={dividerStyles.static}></div>;
+const Divider: React.FC<Props> = ({ isStatic, staticClassName }) => {
+	let classNames = dividerStyles.static;
+	if (staticClassName) classNames += ` ${staticClassName}`;
+	if (isStatic) return <div className={classNames}></div>;
 	return (
 		<div className={dividerStyles.main}>
 			<motion.div

@@ -17,3 +17,9 @@
   color: var(--black);
   font-size: 0.75rem;
 }
+
+@media (min-width: 500px) {
+  .contact > div > p {
+    font-size: 1rem;
+  }
+}

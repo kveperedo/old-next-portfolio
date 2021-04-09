@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-.titleContainer .title {
+.title {
   color: var(--black);
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -31,4 +31,24 @@
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   margin: 0;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .infoText {
+    margin-bottom: 0;
+  }
 }

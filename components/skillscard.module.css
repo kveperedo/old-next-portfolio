@@ -16,6 +16,7 @@
   padding: 1rem;
   background-color: var(--white);
   border-radius: 0 0 1rem 1rem;
+  text-align: center;
 }
 
 .title {
@@ -32,4 +33,24 @@
   color: var(--grey-400);
   letter-spacing: 0.1rem;
   margin: 0 0 0.75rem 0;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .title,
+  .skill {
+    color: var(--white);
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .skill {
+    font-weight: 300;
+  }
 }
