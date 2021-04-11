@@ -185,12 +185,12 @@
   }
 
   .intro .greeting {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 
   .intro .name {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: left;
   }
 
@@ -198,6 +198,7 @@
     text-align: left;
     padding-right: 5rem;
     line-height: 200%;
+    font-size: 1rem;
   }
 
   .card {
@@ -216,5 +217,19 @@
 
   .card .contact > div {
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1900px) {
+  .intro .greeting {
+    font-size: 3.5rem;
+  }
+
+  .intro .name {
+    font-size: 6rem;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
   }
 }
