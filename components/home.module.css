@@ -159,7 +159,7 @@
 
 @media (min-width: 1440px) {
   .container {
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: row;
   }
 
