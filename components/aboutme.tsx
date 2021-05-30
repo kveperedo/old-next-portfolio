@@ -27,8 +27,8 @@ const AboutMe: React.FC<Props> = forwardRef((_, ref) => {
 				JavaScript and currently learning TypeScript and React frameworks.
 			</p>
 			<p>
-				Currently working at <span className={aboutMeStyles.blue}>SQREEM Technologies</span> as a software engineer
-				since 2020.
+				Currently working at <span className={aboutMeStyles.blue}>Lexagle Inc.</span> as a Junior Software Engineer
+				since 2021.
 			</p>
 			<p>
 				My <span className={aboutMeStyles.green}>hobbies</span> are: love for computers and mechanical keyboards,

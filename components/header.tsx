@@ -110,16 +110,16 @@ const Header: React.FC<Props> = ({ current, onMenuClick }) => {
 					Kevin Von Peredo
 				</motion.p>
 				<AnimatePresence exitBeforeEnter>
-					<motion.img
+					<motion.div
 						className={headerStyles.mobileMenu}
 						key={isOpen ? imgSrc.close : imgSrc.open}
-						src={isOpen ? imgSrc.close : imgSrc.open}
 						variants={fadeVariants(0, 0.2)}
 						initial="hidden"
 						animate="visible"
-						alt="menu icon"
 						onClick={() => setIsOpen(!isOpen)}
-					/>
+					>
+						<Image width={32} height={32} alt="menu icon" src={isOpen ? imgSrc.close : imgSrc.open} key={isOpen ? imgSrc.close : imgSrc.open} />
+					</motion.div>
 				</AnimatePresence>
 				<ul className={headerStyles.desktopMenu}>
 					{headerList.map(item => {
