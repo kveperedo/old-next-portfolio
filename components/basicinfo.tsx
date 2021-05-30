@@ -19,8 +19,13 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 			<div className={basicInfoStyles.infoCard}>
 				<h3 className={basicInfoStyles.title}>EMPLOYMENT HISTORY</h3>
 				<InfoText
+					title="Junior Software Engineer"
+					subtitle="May 2021 - Present"
+					description="Lexagle Inc. (Makati City, Philippines)"
+				/>
+				<InfoText
 					title="Software Engineer"
-					subtitle="Feb 2020 - Present"
+					subtitle="Feb 2020 - April 2021"
 					description="SQREEM Technologies Pte. (Quezon City, Philippines)"
 				/>
 			</div>
