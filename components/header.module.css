@@ -11,6 +11,10 @@
   border-radius: 0;
 }
 
+.mobileMenu {
+  height: 32px;
+}
+
 .desktopMenu {
   display: none;
   list-style-type: none;
