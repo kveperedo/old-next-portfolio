@@ -19,14 +19,14 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 			<div className={basicInfoStyles.infoCard}>
 				<h3 className={basicInfoStyles.title}>EMPLOYMENT HISTORY</h3>
 				<InfoText
-					title="Junior Software Engineer"
-					subtitle="May 2021 - Present"
-					description="Lexagle Inc. (Makati City, Philippines)"
+					title='Junior Software Engineer'
+					subtitle='May 2021 - Present'
+					description='Lexagle Inc. (Makati City, Philippines)'
 				/>
 				<InfoText
-					title="Software Engineer"
-					subtitle="Feb 2020 - April 2021"
-					description="SQREEM Technologies Pte. (Quezon City, Philippines)"
+					title='Software Engineer'
+					subtitle='Feb 2020 - April 2021'
+					description='SQREEM Technologies Pte. (Quezon City, Philippines)'
 				/>
 			</div>
 
@@ -35,9 +35,9 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 			<div className={basicInfoStyles.infoCard}>
 				<h3 className={basicInfoStyles.title}>EDUCATION</h3>
 				<InfoText
-					title="BS Electronics Engineering"
-					subtitle="2014 - 2019"
-					description="Saint Louis University (Baguio City, Philippines)"
+					title='BS Electronics Engineering'
+					subtitle='2014 - 2019'
+					description='Saint Louis University (Baguio City, Philippines)'
 				/>
 			</div>
 
@@ -47,20 +47,20 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 				<h3 className={basicInfoStyles.title}>SKILLS</h3>
 				<div className={basicInfoStyles.skills}>
 					<SkillsCard
-						imageSrc="/images/webdev.png"
-						title="Web Development"
-						skills={['HTML5, CSS3', 'JavaScript', 'React, Redux', 'Typescript']}
+						imageSrc='/images/webdev.png'
+						title='Web Development'
+						skills={['HTML5, CSS3', 'JavaScript, Typescript', 'React, Redux', 'Testing (Jest)']}
 					/>
 
 					<SkillsCard
-						imageSrc="/images/design.png"
-						title="Design"
+						imageSrc='/images/design.png'
+						title='Design'
 						skills={['Figma', 'Adobe Photoshop', 'Responsive Web Design']}
 					/>
 
 					<SkillsCard
-						imageSrc="/images/others.png"
-						title="Others"
+						imageSrc='/images/others.png'
+						title='Others'
 						skills={['Python', 'Arduino (C/C++)', 'SQL', 'Version Control (Git)']}
 					/>
 				</div>
@@ -71,21 +71,27 @@ const BasicInfo: React.FC<Props> = forwardRef((_, ref) => {
 			<div className={basicInfoStyles.infoCard}>
 				<h3 className={basicInfoStyles.title}>LICENCES & CERTIFICATIONS</h3>
 				<InfoText
-					title="Modern React with Redux"
-					subtitle="2020"
-					description="Udemy"
+					title='Testing React with Jest and Testing Library'
+					subtitle='2021'
+					description='Udemy'
 					titleAddOns={<span className={basicInfoStyles.addOn}>(Certification)</span>}
 				/>
 				<InfoText
-					title="Electronics Engineer"
-					subtitle="2019"
-					description="Philippines Professional Regulation Commission"
+					title='Modern React with Redux'
+					subtitle='2020'
+					description='Udemy'
+					titleAddOns={<span className={basicInfoStyles.addOn}>(Certification)</span>}
+				/>
+				<InfoText
+					title='Electronics Engineer'
+					subtitle='2019'
+					description='Philippines Professional Regulation Commission'
 					titleAddOns={<span className={basicInfoStyles.addOn}>(License)</span>}
 				/>
 				<InfoText
-					title="Electronics Technician"
-					subtitle="2019"
-					description="Philippines Professional Regulation Commission"
+					title='Electronics Technician'
+					subtitle='2019'
+					description='Philippines Professional Regulation Commission'
 					titleAddOns={<span className={basicInfoStyles.addOn}>(License)</span>}
 				/>
 			</div>
