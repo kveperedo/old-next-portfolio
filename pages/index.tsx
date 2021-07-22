@@ -52,9 +52,9 @@ const IndexPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>Portfolio | Kevin Von Peredo</title>
+				<title>Portfolio | Kevin Von Erich Peredo</title>
 				<link rel="icon" href="/images/logo.svg" />
-				<meta name="description" content="A web portfolio by Kevin Von Erich Peredo, a front-end engineer."></meta>
+				<meta name="description" content="A full-time software engineer working at Lexagle Inc. in the Philippines."></meta>
 			</Head>
 
 			<Particles className="particles" options={options} />
